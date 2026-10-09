@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.ui.text.font.FontFamily
@@ -47,11 +48,11 @@ fun ActivitasPertama(modifier: Modifier) {
                 .fillMaxWidth(1f)
                 .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
+                containerColor = Color.Red
             )
         ) {
             Row() { // row nya dalam card
-                val gambar = painterResource(R.drawable.LOGO_MU)
+                val gambar = painterResource(R.drawable.logomu)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -68,15 +69,28 @@ fun ActivitasPertama(modifier: Modifier) {
                     )
                     Text(
                         stringResource(R.string.alamat),
-                        fontSize = 30.sp,
+                        fontSize = 20.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
 
         }
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ){
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp),
+            )
+        }
+
     }
 }
 

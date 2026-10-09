@@ -20,8 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Composable_Layout_2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    ActivitasPertama(
+
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
