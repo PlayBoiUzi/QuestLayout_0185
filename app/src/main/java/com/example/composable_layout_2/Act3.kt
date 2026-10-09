@@ -31,3 +31,6 @@ fun ActivitasPertama(modifier: Modifier) {
             fontWeight = FontWeight.Bold
         )
         Text(
+            stringResource(R.string.univ),
+            fontSize = 22.sp
+        )
