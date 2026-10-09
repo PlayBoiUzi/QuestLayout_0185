@@ -18,3 +18,5 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.graphics.Color
 
+@Composable
+fun ActivitasPertama(modifier: Modifier) {
